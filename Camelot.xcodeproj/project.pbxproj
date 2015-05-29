@@ -13,6 +13,19 @@
 		B5FC19701B176517004CBB86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FC196F1B176517004CBB86 /* Images.xcassets */; };
 		B5FC19731B176517004CBB86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5FC19711B176517004CBB86 /* LaunchScreen.xib */; };
 		B5FC197F1B176517004CBB86 /* CamelotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC197E1B176517004CBB86 /* CamelotTests.swift */; };
+		B5FC19921B17657E004CBB86 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FC198F1B176556004CBB86 /* ResearchKit.framework */; };
+		B5FC19931B17657E004CBB86 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5FC198F1B176556004CBB86 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5FC19981B17663F004CBB86 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC19971B17663F004CBB86 /* ConsentDocument.swift */; };
+		B5FC199A1B176D1B004CBB86 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC19991B176D1B004CBB86 /* ConsentTask.swift */; };
+		B5FC199C1B17A817004CBB86 /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC199B1B17A817004CBB86 /* SurveyTask.swift */; };
+		B5FC19A41B181C20004CBB86 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = B5FC199E1B181C20004CBB86 /* blue.png */; };
+		B5FC19A51B181C20004CBB86 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = B5FC199F1B181C20004CBB86 /* green.png */; };
+		B5FC19A61B181C20004CBB86 /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = B5FC19A01B181C20004CBB86 /* orange.png */; };
+		B5FC19A71B181C20004CBB86 /* purple.png in Resources */ = {isa = PBXBuildFile; fileRef = B5FC19A11B181C20004CBB86 /* purple.png */; };
+		B5FC19A81B181C20004CBB86 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = B5FC19A21B181C20004CBB86 /* red.png */; };
+		B5FC19A91B181C20004CBB86 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = B5FC19A31B181C20004CBB86 /* yellow.png */; };
+		B5FC19AB1B182369004CBB86 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FC19AA1B182369004CBB86 /* HealthKit.framework */; };
+		B5FC19AE1B18242F004CBB86 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC19AD1B18242F004CBB86 /* HealthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +36,42 @@
 			remoteGlobalIDString = B5FC19621B176516004CBB86;
 			remoteInfo = Camelot;
 		};
+		B5FC198E1B176556004CBB86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FC19881B176554004CBB86 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		B5FC19901B176556004CBB86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FC19881B176554004CBB86 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		B5FC19941B17657E004CBB86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FC19881B176554004CBB86 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5FC19961B17657E004CBB86 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B5FC19931B17657E004CBB86 /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B5FC19631B176516004CBB86 /* Camelot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camelot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +84,19 @@
 		B5FC19781B176517004CBB86 /* CamelotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamelotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FC197D1B176517004CBB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5FC197E1B176517004CBB86 /* CamelotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamelotTests.swift; sourceTree = "<group>"; };
+		B5FC19881B176554004CBB86 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		B5FC19971B17663F004CBB86 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
+		B5FC19991B176D1B004CBB86 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		B5FC199B1B17A817004CBB86 /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
+		B5FC199E1B181C20004CBB86 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
+		B5FC199F1B181C20004CBB86 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		B5FC19A01B181C20004CBB86 /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.png; sourceTree = "<group>"; };
+		B5FC19A11B181C20004CBB86 /* purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purple.png; sourceTree = "<group>"; };
+		B5FC19A21B181C20004CBB86 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		B5FC19A31B181C20004CBB86 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
+		B5FC19AA1B182369004CBB86 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		B5FC19AC1B182369004CBB86 /* Camelot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Camelot.entitlements; sourceTree = "<group>"; };
+		B5FC19AD1B18242F004CBB86 /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5FC19921B17657E004CBB86 /* ResearchKit.framework in Frameworks */,
+				B5FC19AB1B182369004CBB86 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +122,12 @@
 		B5FC195A1B176516004CBB86 = {
 			isa = PBXGroup;
 			children = (
+				B5FC19AA1B182369004CBB86 /* HealthKit.framework */,
+				B5FC19881B176554004CBB86 /* ResearchKit.xcodeproj */,
 				B5FC19651B176516004CBB86 /* Camelot */,
 				B5FC197B1B176517004CBB86 /* CamelotTests */,
 				B5FC19641B176516004CBB86 /* Products */,
+				B5FC199D1B181C20004CBB86 /* color_circles */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +143,17 @@
 		B5FC19651B176516004CBB86 /* Camelot */ = {
 			isa = PBXGroup;
 			children = (
+				B5FC19AC1B182369004CBB86 /* Camelot.entitlements */,
+				B5FC199B1B17A817004CBB86 /* SurveyTask.swift */,
 				B5FC19681B176516004CBB86 /* AppDelegate.swift */,
 				B5FC196A1B176517004CBB86 /* ViewController.swift */,
 				B5FC196C1B176517004CBB86 /* Main.storyboard */,
 				B5FC196F1B176517004CBB86 /* Images.xcassets */,
 				B5FC19711B176517004CBB86 /* LaunchScreen.xib */,
 				B5FC19661B176516004CBB86 /* Supporting Files */,
+				B5FC19971B17663F004CBB86 /* ConsentDocument.swift */,
+				B5FC19991B176D1B004CBB86 /* ConsentTask.swift */,
+				B5FC19AD1B18242F004CBB86 /* HealthManager.swift */,
 			);
 			path = Camelot;
 			sourceTree = "<group>";
@@ -112,6 +183,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B5FC19891B176554004CBB86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5FC198F1B176556004CBB86 /* ResearchKit.framework */,
+				B5FC19911B176556004CBB86 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5FC199D1B181C20004CBB86 /* color_circles */ = {
+			isa = PBXGroup;
+			children = (
+				B5FC199E1B181C20004CBB86 /* blue.png */,
+				B5FC199F1B181C20004CBB86 /* green.png */,
+				B5FC19A01B181C20004CBB86 /* orange.png */,
+				B5FC19A11B181C20004CBB86 /* purple.png */,
+				B5FC19A21B181C20004CBB86 /* red.png */,
+				B5FC19A31B181C20004CBB86 /* yellow.png */,
+			);
+			name = color_circles;
+			path = ../../Downloads/color_circles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +216,12 @@
 				B5FC195F1B176516004CBB86 /* Sources */,
 				B5FC19601B176516004CBB86 /* Frameworks */,
 				B5FC19611B176516004CBB86 /* Resources */,
+				B5FC19961B17657E004CBB86 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B5FC19951B17657E004CBB86 /* PBXTargetDependency */,
 			);
 			name = Camelot;
 			productName = Camelot;
@@ -161,6 +257,12 @@
 				TargetAttributes = {
 					B5FC19621B176516004CBB86 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = G8XD93UH4Z;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					B5FC19771B176517004CBB86 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -179,6 +281,12 @@
 			mainGroup = B5FC195A1B176516004CBB86;
 			productRefGroup = B5FC19641B176516004CBB86 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B5FC19891B176554004CBB86 /* Products */;
+					ProjectRef = B5FC19881B176554004CBB86 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B5FC19621B176516004CBB86 /* Camelot */,
@@ -187,14 +295,37 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		B5FC198F1B176556004CBB86 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = B5FC198E1B176556004CBB86 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B5FC19911B176556004CBB86 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = B5FC19901B176556004CBB86 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		B5FC19611B176516004CBB86 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B5FC196E1B176517004CBB86 /* Main.storyboard in Resources */,
+				B5FC19A91B181C20004CBB86 /* yellow.png in Resources */,
 				B5FC19731B176517004CBB86 /* LaunchScreen.xib in Resources */,
+				B5FC19A71B181C20004CBB86 /* purple.png in Resources */,
+				B5FC19A51B181C20004CBB86 /* green.png in Resources */,
 				B5FC19701B176517004CBB86 /* Images.xcassets in Resources */,
+				B5FC19A81B181C20004CBB86 /* red.png in Resources */,
+				B5FC19A41B181C20004CBB86 /* blue.png in Resources */,
+				B5FC19A61B181C20004CBB86 /* orange.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +344,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5FC196B1B176517004CBB86 /* ViewController.swift in Sources */,
+				B5FC19AE1B18242F004CBB86 /* HealthManager.swift in Sources */,
+				B5FC199A1B176D1B004CBB86 /* ConsentTask.swift in Sources */,
+				B5FC199C1B17A817004CBB86 /* SurveyTask.swift in Sources */,
+				B5FC19981B17663F004CBB86 /* ConsentDocument.swift in Sources */,
 				B5FC19691B176517004CBB86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +367,11 @@
 			isa = PBXTargetDependency;
 			target = B5FC19621B176516004CBB86 /* Camelot */;
 			targetProxy = B5FC19791B176517004CBB86 /* PBXContainerItemProxy */;
+		};
+		B5FC19951B17657E004CBB86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = B5FC19941B17657E004CBB86 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -342,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Camelot/Camelot.entitlements;
 				INFOPLIST_FILE = Camelot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Camelot/Camelot.entitlements;
 				INFOPLIST_FILE = Camelot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
