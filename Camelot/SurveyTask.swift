@@ -25,7 +25,7 @@ public var SurveyTask: ORKOrderedTask {
     let nameAnswerFormat2 = ORKBooleanAnswerFormat()
     
     nameAnswerFormat.multipleLines = false
-    let nameQuestionStepTitle = "What is your name?"
+    let nameQuestionStepTitle = "Did you throw up today"
     let nameQuestionStep = ORKQuestionStep(identifier: "QuestionStep", title: nameQuestionStepTitle, answer: nameAnswerFormat2)
     steps += [nameQuestionStep]
     
@@ -43,8 +43,22 @@ public var SurveyTask: ORKOrderedTask {
     let questQuestionStep = ORKQuestionStep(identifier: "TextChoiceQuestionStep", title: questQuestionStepTitle, answer: questAnswerFormat)
     steps += [questQuestionStep]
     //TODO: add question about Temperature
-
+    let tempQuestionStepTitle = "What is your current body temperature?"
+    
+    let localizedQuestionStep1AnswerFormatUnit = NSLocalizedString("Farhenheit", comment: "temperature")
+    let questionStep1AnswerFormat = ORKAnswerFormat.decimalAnswerFormatWithUnit(localizedQuestionStep1AnswerFormatUnit)
+    
+    let tempQuestionStep = ORKQuestionStep(identifier: "Temperature", title: tempQuestionStepTitle, answer: questionStep1AnswerFormat)
+    
+    //tempQuestionStep.text = exampleDetailText
+    tempQuestionStep.placeholder = NSLocalizedString("Temperature", comment: "")
+    
+    steps += [tempQuestionStep]
+    
     //TODO: add question about Dehydration
+    
+    let quesDehydrationStep = ORKQuestionResult(identifier: "Dehydration")
+    let 
     
     //TODO: add question about Loss of weight
     
