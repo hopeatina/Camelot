@@ -58,7 +58,7 @@ public var SurveyTask: ORKOrderedTask {
     //TODO: add question about Dehydration
     
     let quesDehydrationStep = ORKQuestionResult(identifier: "Dehydration")
-    let 
+    
     
     //TODO: add question about Loss of weight
     
